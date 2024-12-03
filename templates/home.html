@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diamond Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body bgcolor="#ffffff">
+    <center>
+        <h1>Diamond Price Prediction</h1><br>
+        <form method="POST" action="{{ url_for('home1') }}">
+            <div class="form-row">
+                <label for="carat">CARAT:</label>
+                <input type="text" id="carat" name="a" placeholder="Enter value">
+            </div>
+            <div class="form-row">
+                <label for="cut">CUT:</label>
+                <select id="cut" name="b">
+                    <option value="Ideal">Ideal</option>
+                    <option value="Premium">Premium</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Fair">Fair</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="color">COLOR:</label>
+                <select id="color" name="c">
+                    <option value="E">E</option>
+                    <option value="I">I</option>
+                    <option value="J">J</option>
+                    <option value="H">H</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                    <option value="D">D</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="clarity">CLARITY:</label>
+                <select id="clarity" name="d">
+                    <option value="SI2">SI2</option>
+                    <option value="SI1">SI1</option>
+                    <option value="VS1">VS1</option>
+                    <option value="VS2">VS2</option>
+                    <option value="VVS2">VVS2</option>
+                    <option value="VVS1">VVS1</option>
+                    <option value="I1">I1</option>
+                    <option value="IF">IF</option>
+                </select>
+            </div>
+            <!-- <div class="form-row">
+                <label for="depth">DEPTH:</label>
+                <input type="text" id="depth" name="e" placeholder="Enter 5">
+            </div> -->
+            <div class="form-row">
+                <label for="table">TABLE:</label>
+                <input type="text" id="table" name="f" placeholder="Enter value">
+            </div>
+            <div class="form-row">
+                <label for="length">Length (mm):</label>
+                <input type="text" id="length" name="g" placeholder="Enter value">
+            </div>
+            <div class="form-row">
+                <label for="width">Width (mm):</label>
+                <input type="text" id="width" name="h" placeholder="Enter value">
+            </div>
+            <div class="form-row">
+                <label for="depth_mm">Depth (mm):</label>
+                <input type="text" id="depth_mm" name="i" placeholder="Enter value">
+            </div>
+            <input type="submit" value="Predict!" class="submit-button">
+        </form>
+    </center>
+</body>
+</html>
